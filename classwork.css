@@ -1,0 +1,17 @@
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.contain{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    position: fixed;
+}
+.bottom{
+    width: 200px;
+    height: 300px;
+    background-color: orange;
+    position: absolute;
+    top: 70%;
+}

@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-left: 43%;
+    margin-top: 18%;
+    font-size: 3.5rem;
+    color: white;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 3;
+}
+.input{
+    padding: 12px 153px;
+    margin-left: 33%;
+    margin-top: 12px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    border: none;
+}
+div{
+    margin-left: 45%;
+    align-items: center;
+    margin-top: 14px;
+}
+.sp{
+    margin-left: -34%;
+}
+.but1{
+    margin-right: 17px;
+    padding: 12px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+}
+.but2{
+    padding: 12px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+
+}
+body{
+    background-image: linear-gradient(to top,rgba(255, 8, 0, 0.075),rgba(0, 0, 0, 0.808)),url(working-nature-people-field-farm-countryside-1130897-pxhere.com_.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 68vh;
+}
+.link1{
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;  
+}
+.div11{
+    margin-left: 85%;
+    margin-top: 3%;
+
+}
+.di{
+    margin-left: 40%;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 0px;
+}
+
+.but1:hover{
+    background-color: rgba(255, 255, 255, 0.534);
+    text-decoration: none;
+}
+.but2:hover{
+    background-color: rgba(255, 255, 255, 0.534);
+    text-decoration: none;
+}
+h1:hover{
+    color: blue;
+}

@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* font family helps in the text of the body to look reasonable and better */
+    font-family: 'Noto San JP',sans-serif;
+    /* text in between the lines */
+    line-height: 1.6;
+}  
+img{
+    max-width: 100%;
+    display: block;
+
+}
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+section{
+    padding: 7em 0;
+}
+.container{
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+.split{
+    display: flex;
+    /* it put a space between the items */
+    gap:2em ;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* this code helps in adjusting block elements (thats the images)
+    in an horizontal and vertical line */
+   & > * {
+flex-basis:30% ;
+/* minimum width in the site */
+min-width: 15em;
+   }
+}
+
+.split > * {
+
+}
+
+/* helps to add space in the texts above  */
+.spacing >*+*{
+    margin-top: var(--spacer,2rem);
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-test,#fff);
+    /* font weight increases the size of text */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+}
+.btn:hover{
+    transform:scale(1.1);
+    opacity:.9;
+}
+.primary-title{
+    font-size: 4rem;
+    /* helps in the webpage sizes it doesnt affect the texts */
+    font-size: clamp(3rem, calc(5vw + 1rem),4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+.section-title{
+    /* for the texts to be at center */
+text-align: center;
+font-size: clamp(2.5rem ,calc(5vw + 1rem),4rem);
+line-height: 1;
+color: #17353d;
+margin-bottom: 5rem;
+}
+.hero{
+    /* helps to adjust the text */
+    color: white;
+    text-align: center;
+    padding: 15em 0;
+    background: #222;
+   
+        background: url(/images/Backgroun.jpg.jpg),
+        /* makes the background dark */
+        radial-gradient(#444,#111);
+        background-blend-mode: multiply;
+    /* background-size: 10%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.featured_item{
+    background: #eee;
+    display: block;
+    position: relative;
+    transform: scale(.85);
+    transition: transform 250ms ease-in-out;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;     
+}
+.featured__details{
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+
+span{
+    display: block;
+    font-weight: 700;
+    font-size:2.5em;
+    
+}  
+
+
+.featured_item:hover{
+ transform: scale(1);
+ .featured__details{
+    opacity: 1;
+ }
+}
+img{
+    width: 10em;
+    height: 10em;
+    
+}
+.featured__details{
+    opacity: 0;
+    text-shadow: 0 0 .2em rgba(#fff,1);
+}
+.product{
+    background: radial-gradient(var(--clr-inner,limegreen),var(--clr-outer, purple));
+    padding: 3em 0;
+border-radius: 1em;
+margin-bottom: 3em;
+text-align: center;
+}
+.product__title{
+ font-size: 2.5rem;  
+ text-transform: uppercase;
+ line-height: 1; 
+ color: #fff;
+ text-shadow: 0 0 .2em rgba(#000, .2);
+}
+.product__image{
+margin: -5em 0 0 0 ;
+outline: 2px solid red;
+} 
+@media (min-width:45em) {
+    .product__image{
+        float: right;
+        width: 65%;
+        shape-outside: url(../images/burger5.jpg.jpg);
+        shape-margin: 1em;
+    }
+} 
+
+.hero{
+--clr-accent: #faa700;
+}
+
+.tech-1{
+    --clr-inner: #faa700;
+    --clr-outer: #e48d00;
+    --clr-accent:#a1173c;
+}
+.tech-2{
+    --clr-inner: #fce4b3;
+    --clr-outer: #eac886;
+    --clr-accent: #2f4858;
+}
+.tech-3{
+    --clr-inner: #6dd5ed;
+    --clr-outer: #2193b0;
+    --clr-accent: #008951;
+}
+.product__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15em;
+    width: 200px;
+}
+.end{
+    font-size: 2.5rem; 
+    text-transform: uppercase; 
+    color: #333;
+}
+#contact{
+    text-align: center;
+     padding: 50px 0;
+}
+#services{
+    text-align: center; 
+    padding: 50px 0;
+}
+
+.begin{
+    font-size: 2.5rem;
+     text-transform: uppercase; 
+    color: #333;
+}
+.para{
+    font-size: 1.2rem;
+     color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
